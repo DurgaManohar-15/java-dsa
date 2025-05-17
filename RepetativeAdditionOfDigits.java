@@ -1,16 +1,4 @@
-/* public class RepetativeAdditionOfDigits {
-    public static void main(String[] args) {
-        int num =1234;
-         int sum =0;
-         int final_sum=0;
-        while(num!=0){
-            num =num%10;
-            sum=sum+num;
-         /* final_sum=Math.min(final_sum,sum); 
-    }
-    System.out.print(sum);
-}
-} */
+
 
 public class RepetativeAdditionOfDigits {
     public static void main(String[] args) {
