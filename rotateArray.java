@@ -1,23 +1,34 @@
 public class rotateArray {
    public static void main(String[] args) {
-    int arr[] = {1, 2, 3, 4, 5, 6};
+    int arr[] = {1, 2, 3};
     int n =arr.length;
-    int d =2;
-    for(int i =0 ; i<n;i++){
-        int d1 = d%n;
-        for(int j = n-d1 ; j< n ;j++){
-                int temp = arr[i];
-                arr[i] = arr[d1];
-                arr[d1]=temp;
+    int d =4;
+    int count =0 ; 
+/*     int temp[] = new int [ n];
+
+    for(int i=d;i<n;i++){
+        temp[count++]=arr[i];
+    }
+    for(int j = 0 ;j<d;j++){
+      temp[count++]=arr[j];
+    } */
+
+for(int i=0;i<d;i++){
+            int temp=arr[0];
+            for(int j=1;j<arr.length;j++){
+                arr[j-1]=arr[j];
 
                 
-             System.out.print(arr[i]+" ");
-             
+            }
+            arr[arr.length-1]=temp;
         }
-      
-        
-    }
-  
-  }
-   } 
+
+         for(int j=0;j<arr.length;j++){
+            System.out.print(arr[j]);
+         } 
+
+
+   }
+
+  } 
 
